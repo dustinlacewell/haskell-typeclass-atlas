@@ -6,6 +6,8 @@ skinparam defaultFontColor black
 skinparam defaultFontName "Source Code Pro"
 
 class Eq as "**Eq** :: * -> Constraint"
+class Ord as "**Ord** :: * -> Constraint"
+class Num as "**Num** :: * -> Constraint"
 class Semigroup as "**Semigroup** :: * -> Constraint"
 class Monoid as "**Monoid** :: Semigroup a => Monoid a where"
 class Functor as "**Functor** :: (* -> *) -> Constraint"
@@ -26,6 +28,36 @@ class Eq {
         --Instances--
         <size:8>Int, Float, Double, Char, Bool</size>
 }
+
+Ord --left> Eq
+
+class Ord {
+        <size:14>Eq a => Ord a where</size>
+        ---
+        (<)  :: a -> a -> Bool
+        (<=) :: a -> a -> Bool
+        (>)  :: a -> a -> Bool
+        (>=) :: a -> a -> Bool
+        max  :: a -> a -> a
+        min  :: a -> a -> a
+        --Instances--
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+class Num {
+        <size:14>Num a where</size>
+        ---
+        (+)         :: a -> a -> a
+        (-)         :: a -> a -> a
+        (*)         :: a -> a -> a
+        negate      :: a -> a
+        abs         :: a -> a
+        signum      :: a -> a
+        fromInteger :: Integer -> a
+        --Instances--
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
 
 Functor --> Traversable
 Functor --> Applicative
