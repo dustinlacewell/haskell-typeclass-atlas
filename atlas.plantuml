@@ -5,7 +5,7 @@ hide method
 skinparam defaultFontColor black
 skinparam defaultFontName "Source Code Pro"
 
-
+class Eq as "**Eq** :: * -> Constraint"
 class Semigroup as "**Semigroup** :: * -> Constraint"
 class Monoid as "**Monoid** :: Semigroup a => Monoid a where"
 class Functor as "**Functor** :: (* -> *) -> Constraint"
@@ -17,6 +17,15 @@ class Category as "**Category** :: forall k. (k -> k -> *) -> Constraint"
 class Arrow as "**Arrow** :: (* -> * -> *) -> Constraint"
 class Monad as "**Monad** :: (* -> *) -> Constraint"
 class Alternative as "**Alternative** :: (* -> *) -> Constraint"
+
+class Eq {
+        <size:14>Eq a where</size>
+        ---
+        (==) :: a -> a -> Bool
+        (/=) :: a -> a -> Bool
+        --Instances--
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
 
 Functor --> Traversable
 Functor --> Applicative
