@@ -49,7 +49,7 @@ class Semigroup {
         <size:14>Semigroup a where</size>
         ---
         (<>)    :: a -> a -> a
-        sconcat :: GHC.Base.NonEmpty a -> a
+        sconcat :: NonEmpty a -> a
         stimes  :: Integral b => b -> a -> a
         --Instances--
         <size:8>Either a b, [a], Maybe a, IO a, a -> b</size>
@@ -86,11 +86,13 @@ class Monoid {
 }
 
 
-
-
 Category --> Arrow
 
 Foldable --> Traversable
+Foldable ..> Monoid
+Foldable ..up> Eq
+Foldable ..up> Ord
+Foldable ..up> Num
 
 class Foldable {
         <size:14>Foldable t where</size>
