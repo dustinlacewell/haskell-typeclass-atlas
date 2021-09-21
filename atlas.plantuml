@@ -5,6 +5,8 @@ hide method
 skinparam defaultFontColor black
 skinparam defaultFontName "Source Code Pro"
 
+scale 1.5
+
 class Eq as "**Eq** :: * -> Constraint"
 class Ord as "**Ord** :: * -> Constraint"
 class Num as "**Num** :: * -> Constraint"
@@ -25,6 +27,8 @@ class Eq {
         ---
         (==) :: a -> a -> Bool
         (/=) :: a -> a -> Bool
+        --Required--
+        <size:9>(==) | (/=)</size>
         --Instances--
         <size:8>Int, Float, Double, Char, Bool</size>
 }
@@ -40,6 +44,8 @@ class Ord {
         (>=) :: a -> a -> Bool
         max  :: a -> a -> a
         min  :: a -> a -> a
+        --Required--
+        <size:9>compare | (<=)</size>
         --Instances--
         <size:8>Int, Float, Double, Char, Bool</size>
 }
@@ -54,6 +60,8 @@ class Num {
         abs         :: a -> a
         signum      :: a -> a
         fromInteger :: Integer -> a
+        --Required--
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
         --Instances--
         <size:8>Int, Float, Double, Char, Bool</size>
 }
@@ -68,6 +76,8 @@ class Functor {
         ---
         fmap :: (a -> b) -> f a -> f b
         (<$) :: a -> f b -> f a
+        --Required--
+        <size:9>fmap</size>
         --Instances--
         <size:8>Either a, [], Maybe, IO, (->) r, (,) a</size>
 }
@@ -78,10 +88,11 @@ class Comonad {
         extract   :: w a -> a
         duplicate :: w a -> w (w a)
         extend    :: (w a -> b) -> w a -> w b
+        --Required--
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
         --Instances--
         <size:8>(->) m, (,) e</size>
 }
-
 
 
 Semigroup --> Monoid
@@ -92,10 +103,11 @@ class Semigroup {
         (<>)    :: a -> a -> a
         sconcat :: NonEmpty a -> a
         stimes  :: Integral b => b -> a -> a
+        --Required--
+        <size:9>(<>)</size>
         --Instances--
         <size:8>Either a b, [a], Maybe a, IO a, a -> b</size>
 }
-
 
 
 Applicative --> Alternative
@@ -109,11 +121,11 @@ class Applicative {
         liftA2 :: (a -> b -> c) -> f a -> f b -> f c
         (*>)   :: f a -> f b -> f b
         (<*)   :: f a -> f b -> f a
+        --Required--
+        <size:9>pure, ((<*>) | liftA2)</size>
         --Instances--
         <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
 }
-
-
 
 
 class Monoid {
@@ -122,6 +134,8 @@ class Monoid {
         mempty  :: a
         mappend :: a -> a -> a
         mconcat :: [a] -> a
+        --Required--
+        <size:9>mempty</size>
         --Instances--
         <size:8>[a], Maybe a, IO a, a -> b, (a, b)</size>
 }
@@ -152,6 +166,8 @@ class Foldable {
         minimum :: Ord a => t a -> a
         sum     :: Num a => t a -> a
         product :: Num a => t a -> a
+        --Required--
+        <size:9>foldMap | foldr</size>
         --Instances--
         <size:8>[], Maybe, Either a, (,) a</size>
 }
@@ -166,6 +182,8 @@ class Monad {
         (>>=)  :: m a -> (a -> m b) -> m b
         (>>)   :: m a -> m b -> m b
         return :: a -> m a
+        --Required--
+        <size:9>(>>=)</size>
         --Instances--
         <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
 }
@@ -177,6 +195,8 @@ class Traversable {
         sequenceA :: Applicative f => t (f a) -> f (t a)
         mapM      :: Monad m => (a -> m b) -> t a -> m (t b)
         sequence  :: Monad m => t (m a) -> m (t a)
+        --Required--
+        <size:9>traverse | sequenceA</size>
         --Instances--
         <size:8>[], Maybe, Either a, (,) a</size>
 }
@@ -188,6 +208,8 @@ class Alternative {
         (<|>) :: f a -> f a -> f a
         some  :: f a -> f [a]
         many  :: f a -> f [a]
+        --Required--
+        <size:9>empty, (<|>)</size>
         --Instances--
         <size:8>[], Maybe, IO</size>
 }
@@ -197,6 +219,8 @@ class Category {
         ---
         id  :: cat a a
         (.) :: cat b c -> cat a b -> cat a c
+        --Required--
+        <size:9>id, (.)</size>
         --Instances--
         <size:8>->, Cokleisli w</size>
 }
@@ -216,10 +240,11 @@ class Arrow {
         second :: a b c -> a (d, b) (d, c)
         (***)  :: a b c -> a b' c' -> a (b, b') (c, c')
         (&&&)  :: a b c -> a b c' -> a b (c, c')
+        --Required--
+        <size:9>arr, (first | (***))</size>
         --Instances--
         <size:8>(->)</size>
 }
-
 
 /'
  ' ArrowZero -left-> ArrowPlus
