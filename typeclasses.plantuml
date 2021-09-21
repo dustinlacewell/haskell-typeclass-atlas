@@ -1,0 +1,184 @@
+@startuml
+hide circle
+hide method
+
+skinparam defaultFontColor black
+skinparam defaultFontName "Source Code Pro"
+
+
+class Semigroup as "**Semigroup** :: * -> Constraint"
+class Monoid as "**Monoid** :: Semigroup a => Monoid a where"
+class Functor as "**Functor** :: (* -> *) -> Constraint"
+class Foldable as "**Foldable** :: (* -> *) -> Constraint"
+class Traversable as "**Traversable** :: (* -> *) -> Constraint"
+class Applicative as "**Applicative** :: (* -> *) -> Constraint"
+class Comonad as "**Comonad** :: (* -> *) -> Constraint"
+class Category as "**Category** :: forall k. (k -> k -> *) -> Constraint"
+class Arrow as "**Arrow** :: (* -> * -> *) -> Constraint"
+class Monad as "**Monad** :: (* -> *) -> Constraint"
+class Alternative as "**Alternative** :: (* -> *) -> Constraint"
+
+Functor --> Traversable
+Functor --> Applicative
+Functor --> Comonad
+
+class Functor {
+        <size:14>Functor f where</size>
+        ---
+        fmap :: (a -> b) -> f a -> f b
+        (<$) :: a -> f b -> f a
+        --Instances--
+        <size:8>Either a, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+class Comonad {
+        <size:14>Functor w => Comonad w where</size>
+        ---
+        extract   :: w a -> a
+        duplicate :: w a -> w (w a)
+        extend    :: (w a -> b) -> w a -> w b
+        --Instances--
+        <size:8>(->) m, (,) e</size>
+}
+
+
+
+Semigroup --> Monoid
+
+class Semigroup {
+        <size:14>Semigroup a where</size>
+        ---
+        (<>)    :: a -> a -> a
+        sconcat :: GHC.Base.NonEmpty a -> a
+        stimes  :: Integral b => b -> a -> a
+        --Instances--
+        <size:8>Either a b, [a], Maybe a, IO a, a -> b</size>
+}
+
+
+
+Applicative --> Alternative
+Applicative --> Monad
+
+class Applicative {
+        <size:14>Functor f => Applicative f where</size>
+        ---
+        pure   :: a -> f a
+        (<*>)  :: f (a -> b) -> f a -> f b
+        liftA2 :: (a -> b -> c) -> f a -> f b -> f c
+        (*>)   :: f a -> f b -> f b
+        (<*)   :: f a -> f b -> f a
+        --Instances--
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+
+
+
+class Monoid {
+        <size:14>Semigroup a => Monoid a where</size>
+        ---
+        mempty  :: a
+        mappend :: a -> a -> a
+        mconcat :: [a] -> a
+        --Instances--
+        <size:8>[a], Maybe a, IO a, a -> b, (a, b)</size>
+}
+
+
+
+
+Category --> Arrow
+
+Foldable --> Traversable
+
+class Foldable {
+        <size:14>Foldable t where</size>
+        ---
+        fold    :: Monoid m => t m -> m
+        foldMap :: Monoid m => (a -> m) -> t a -> m
+        foldr   :: (a -> b -> b) -> b -> t a -> b
+        foldl   :: (b -> a -> b) -> b -> t a -> b
+        foldr1  :: (a -> a -> a) -> t a -> a
+        foldl1  :: (a -> a -> a) -> t a -> a
+        toList  :: t a -> [a]
+        null    :: t a -> Bool
+        length  :: t a -> Int
+        elem    :: Eq a => a -> t a -> Bool
+        maximum :: Ord a => t a -> a
+        minimum :: Ord a => t a -> a
+        sum     :: Num a => t a -> a
+        product :: Num a => t a -> a
+        --Instances--
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+' Monad --> MonadFix
+' Monad --> MonadPlus
+' Monad -> ArrowApply
+
+class Monad {
+        <size:14>Applicative m => Monad m where</size>
+        ---
+        (>>=)  :: m a -> (a -> m b) -> m b
+        (>>)   :: m a -> m b -> m b
+        return :: a -> m a
+        --Instances--
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+class Traversable {
+        (<size:14>Functor t, Foldable t) => Traversable t where</size>
+        ---
+        traverse  :: Applicative f => (a -> f b) -> t a -> f (t b)
+        sequenceA :: Applicative f => t (f a) -> f (t a)
+        mapM      :: Monad m => (a -> m b) -> t a -> m (t b)
+        sequence  :: Monad m => t (m a) -> m (t a)
+        --Instances--
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+class Alternative {
+        <size:14>Applicative f => Alternative f where</size>
+        ---
+        empty :: f a
+        (<|>) :: f a -> f a -> f a
+        some  :: f a -> f [a]
+        many  :: f a -> f [a]
+        --Instances--
+        <size:8>[], Maybe, IO</size>
+}
+
+class Category {
+        <size:14>Category cat where</size>
+        ---
+        id  :: cat a a
+        (.) :: cat b c -> cat a b -> cat a c
+        --Instances--
+        <size:8>->, Cokleisli w</size>
+}
+
+/'
+ ' Arrow --> ArrowApply
+ ' Arrow --> ArrowChoice
+ ' Arrow --> ArrowLoop
+ ' Arrow --> ArrowZero
+ '/
+
+class Arrow {
+        <size:14>Category a => Arrow a where</size>
+        ---
+        arr    :: (b -> c) -> a b c
+        first  :: a b c -> a (b, d) (c, d)
+        second :: a b c -> a (d, b) (d, c)
+        (***)  :: a b c -> a b' c' -> a (b, b') (c, c')
+        (&&&)  :: a b c -> a b c' -> a b (c, c')
+        --Instances--
+        <size:8>(->)</size>
+}
+
+
+/'
+ ' ArrowZero -left-> ArrowPlus
+ '/
+@enduml
