@@ -188,6 +188,9 @@ class Monad {
         <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
 }
 
+Traversable ..> Applicative
+Traversable ..> Monad
+
 class Traversable {
         (<size:14>Functor t, Foldable t) => Traversable t where</size>
         ---
