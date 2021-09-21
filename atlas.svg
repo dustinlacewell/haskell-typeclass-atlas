@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1975.5px" preserveAspectRatio="none" style="width:1965px;height:1975px;" version="1.1" viewBox="0 0 1965 1975" width="1965px" zoomAndPan="magnify"><defs><filter height="300%" id="fv26iv4zdjog8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="3.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="6.0" dy="6.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a4a02ba6dec993d6b055d21bcd806f7f]
+class Eq--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="215.0378" id="Eq" style="stroke: #A80036; stroke-width: 2.25;" width="249" x="589.875" y="62.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="21" x="604.125" y="87.4621">Eq</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="189" x="635.625" y="87.4621">:: * -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="591.375" x2="837.375" y1="99.8762" y2="99.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="120" x="598.875" y="126.5401">Eq a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="591.375" x2="837.375" y1="138.273" y2="138.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="598.875" y="160.5089">(==) :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="598.875" y="181.2493">(/=) :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="82.5" x="598.875" y="225.7782">(==) | (/=)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="591.375" x2="672.375" y1="202.1239" y2="202.1239"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="672.375" y="207.2396">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="756.375" x2="837.375" y1="202.1239" y2="202.1239"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="225" x="598.875" y="268.0119">Int, Float, Double, Char, Bool</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="591.375" x2="667.125" y1="245.8339" y2="245.8339"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="667.125" y="250.9496">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="761.625" x2="837.375" y1="245.8339" y2="245.8339"/><!--MD5=[0a94d40ff7cc35fe71862456918c64e2]
+class Ord--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="297.9992" id="Ord" style="stroke: #A80036; stroke-width: 2.25;" width="249" x="891.375" y="20.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="31.5" x="900.375" y="45.4621">Ord</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="189" x="942.375" y="45.4621">:: * -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="892.875" x2="1138.875" y1="57.8762" y2="57.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="228" x="900.375" y="84.5401">Eq a =&gt; Ord a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="892.875" x2="1138.875" y1="96.273" y2="96.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="900.375" y="118.5089">(&lt;)  :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="900.375" y="139.2493">(&lt;=) :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="900.375" y="159.9896">(&gt;)  :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="900.375" y="180.73">(&gt;=) :: a -&gt; a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="199.5" x="900.375" y="201.4703">max  :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="199.5" x="900.375" y="222.2106">min  :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="105" x="900.375" y="266.7396">compare | (&lt;=)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="892.875" x2="973.875" y1="243.0853" y2="243.0853"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="973.875" y="248.201">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1057.875" x2="1138.875" y1="243.0853" y2="243.0853"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="225" x="900.375" y="308.9733">Int, Float, Double, Char, Bool</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="892.875" x2="968.625" y1="286.7952" y2="286.7952"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="968.625" y="291.911">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1063.125" x2="1138.875" y1="286.7952" y2="286.7952"/><!--MD5=[460e68a50b4b95871b3c943e8574968f]
+class Num--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="318.7396" id="Num" style="stroke: #A80036; stroke-width: 2.25;" width="393" x="144.375" y="10.5"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="31.5" x="225.375" y="35.7121">Num</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="189" x="267.375" y="35.7121">:: * -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="145.875" x2="535.875" y1="48.1262" y2="48.1262"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="132" x="153.375" y="74.7901">Num a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="145.875" x2="535.875" y1="86.523" y2="86.523"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="273" x="153.375" y="108.7589">(+)         :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="273" x="153.375" y="129.4993">(-)         :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="273" x="153.375" y="150.2396">(*)         :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="153.375" y="170.98">negate      :: a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="153.375" y="191.7203">abs         :: a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="153.375" y="212.4606">signum      :: a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="153.375" y="233.201">fromInteger :: Integer -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="375" x="153.375" y="277.7299">(+), (*), abs, signum, fromInteger, (negate | (-))</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="145.875" x2="298.875" y1="254.0756" y2="254.0756"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="298.875" y="259.1913">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="382.875" x2="535.875" y1="254.0756" y2="254.0756"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="225" x="153.375" y="319.9636">Int, Float, Double, Char, Bool</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="145.875" x2="293.625" y1="297.7856" y2="297.7856"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="293.625" y="302.9013">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="388.125" x2="535.875" y1="297.7856" y2="297.7856"/><!--MD5=[7a2b7f31f75de254ead532d5b455fd79]
+class Semigroup--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="235.7782" id="Semigroup" style="stroke: #A80036; stroke-width: 2.25;" width="396" x="21.375" y="533.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="72.375" y="558.4621">Semigroup</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="189" x="177.375" y="558.4621">:: * -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="22.875" x2="415.875" y1="570.8762" y2="570.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="204" x="30.375" y="597.5401">Semigroup a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.875" x2="415.875" y1="609.273" y2="609.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="30.375" y="631.5089">(&lt;&gt;)    :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="273" x="30.375" y="652.2493">sconcat :: NonEmpty a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="378" x="30.375" y="672.9896">stimes  :: Integral b =&gt; b -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="30" x="30.375" y="717.5185">(&lt;&gt;)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.875" x2="177.375" y1="693.8643" y2="693.8643"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="177.375" y="698.98">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="261.375" x2="415.875" y1="693.8643" y2="693.8643"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="285" x="30.375" y="759.7522">Either a b, [a], Maybe a, IO a, a -&gt; b</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.875" x2="172.125" y1="737.5742" y2="737.5742"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="172.125" y="742.6899">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="266.625" x2="415.875" y1="737.5742" y2="737.5742"/><!--MD5=[476f22340dd203b4abef738c53b898a8]
+class Monoid--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="235.7782" id="Monoid" style="stroke: #A80036; stroke-width: 2.25;" width="418.5" x="10.5" y="984.75"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="63" x="15" y="1009.9621">Monoid</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="336" x="88.5" y="1009.9621">:: Semigroup a =&gt; Monoid a where</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="12" x2="427.5" y1="1022.3762" y2="1022.3762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="348" x="19.5" y="1049.0401">Semigroup a =&gt; Monoid a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="12" x2="427.5" y1="1060.773" y2="1060.773"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="126" x="19.5" y="1083.0089">mempty  :: a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="19.5" y="1103.7493">mappend :: a -&gt; a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="199.5" x="19.5" y="1124.4896">mconcat :: [a] -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="45" x="19.5" y="1169.0185">mempty</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="12" x2="177.75" y1="1145.3643" y2="1145.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="177.75" y="1150.48">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="261.75" x2="427.5" y1="1145.3643" y2="1145.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="255" x="19.5" y="1211.2522">[a], Maybe a, IO a, a -&gt; b, (a, b)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="12" x2="172.5" y1="1189.0742" y2="1189.0742"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="172.5" y="1194.1899">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="267" x2="427.5" y1="1189.0742" y2="1189.0742"/><!--MD5=[b13f0f3a4629b291b71b7010093425b4]
+class Functor--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="215.0378" id="Functor" style="stroke: #A80036; stroke-width: 2.25;" width="355.5" x="1011" y="543.75"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73.5" x="1015.5" y="568.9621">Functor</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="1099.5" y="568.9621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1012.5" x2="1365" y1="581.3762" y2="581.3762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="180" x="1020" y="608.0401">Functor f where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1012.5" x2="1365" y1="619.773" y2="619.773"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="315" x="1020" y="642.0089">fmap :: (a -&gt; b) -&gt; f a -&gt; f b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="241.5" x="1020" y="662.7493">(&lt;$) :: a -&gt; f b -&gt; f a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="30" x="1020" y="707.2782">fmap</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1012.5" x2="1146.75" y1="683.6239" y2="683.6239"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1146.75" y="688.7396">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1230.75" x2="1365" y1="683.6239" y2="683.6239"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="285" x="1020" y="749.5119">Either a, [], Maybe, IO, (-&gt;) r, (,) a</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1012.5" x2="1141.5" y1="727.3339" y2="727.3339"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1141.5" y="732.4496">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1236" x2="1365" y1="727.3339" y2="727.3339"/><!--MD5=[dff22b7fbcda2505f8939949a6d11219]
+class Foldable--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="463.922" id="Foldable" style="stroke: #A80036; stroke-width: 2.25;" width="469.5" x="480" y="419.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="84" x="536.25" y="444.4621">Foldable</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="630.75" y="444.4621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="481.5" x2="948" y1="456.8762" y2="456.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="192" x="489" y="483.5401">Foldable t where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="481.5" x2="948" y1="495.273" y2="495.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="325.5" x="489" y="517.5089">fold    :: Monoid m =&gt; t m -&gt; m</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="451.5" x="489" y="538.2493">foldMap :: Monoid m =&gt; (a -&gt; m) -&gt; t a -&gt; m</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="430.5" x="489" y="558.9896">foldr   :: (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="430.5" x="489" y="579.73">foldl   :: (b -&gt; a -&gt; b) -&gt; b -&gt; t a -&gt; b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="378" x="489" y="600.4703">foldr1  :: (a -&gt; a -&gt; a) -&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="378" x="489" y="621.2106">foldl1  :: (a -&gt; a -&gt; a) -&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="489" y="641.951">toList  :: t a -&gt; [a]</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="231" x="489" y="662.6913">null    :: t a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="489" y="683.4317">length  :: t a -&gt; Int</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="367.5" x="489" y="704.172">elem    :: Eq a =&gt; a -&gt; t a -&gt; Bool</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="294" x="489" y="724.9124">maximum :: Ord a =&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="294" x="489" y="745.6527">minimum :: Ord a =&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="294" x="489" y="766.3931">sum     :: Num a =&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="294" x="489" y="787.1334">product :: Num a =&gt; t a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="112.5" x="489" y="831.6623">foldMap | foldr</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="481.5" x2="672.75" y1="808.008" y2="808.008"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="672.75" y="813.1238">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="756.75" x2="948" y1="808.008" y2="808.008"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="489" y="873.896">[], Maybe, Either a, (,) a</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="481.5" x2="667.5" y1="851.718" y2="851.718"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="667.5" y="856.8337">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="762" x2="948" y1="851.718" y2="851.718"/><!--MD5=[2055d40bc6d859339baf0d4f3e86357c]
+class Traversable--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="256.5185" id="Traversable" style="stroke: #A80036; stroke-width: 2.25;" width="627" x="481.875" y="974.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115.5" x="601.125" y="999.4621">Traversable</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="727.125" y="999.4621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="483.375" x2="1107.375" y1="1011.8762" y2="1011.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="10.5" x="490.875" y="1039.7686">(</text><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="540" x="501.375" y="1038.5401">Functor t, Foldable t) =&gt; Traversable t where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="483.375" x2="1107.375" y1="1050.273" y2="1050.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="609" x="490.875" y="1072.5089">traverse  :: Applicative f =&gt; (a -&gt; f b) -&gt; t a -&gt; f (t b)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="504" x="490.875" y="1093.2493">sequenceA :: Applicative f =&gt; t (f a) -&gt; f (t a)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="546" x="490.875" y="1113.9896">mapM      :: Monad m =&gt; (a -&gt; m b) -&gt; t a -&gt; m (t b)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="441" x="490.875" y="1134.73">sequence  :: Monad m =&gt; t (m a) -&gt; m (t a)</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="150" x="490.875" y="1179.2589">traverse | sequenceA</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="483.375" x2="753.375" y1="1155.6046" y2="1155.6046"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="753.375" y="1160.7203">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="837.375" x2="1107.375" y1="1155.6046" y2="1155.6046"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="490.875" y="1221.4926">[], Maybe, Either a, (,) a</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="483.375" x2="748.125" y1="1199.3146" y2="1199.3146"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="748.125" y="1204.4303">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="842.625" x2="1107.375" y1="1199.3146" y2="1199.3146"/><!--MD5=[174c4d2ca358e31fff53dc5dd8cfdcbd]
+class Applicative--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="277.2589" id="Applicative" style="stroke: #A80036; stroke-width: 2.25;" width="480" x="910.875" y="1322.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115.5" x="956.625" y="1347.4621">Applicative</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="1082.625" y="1347.4621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="912.375" x2="1389.375" y1="1359.8762" y2="1359.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="384" x="919.875" y="1386.5401">Functor f =&gt; Applicative f where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="912.375" x2="1389.375" y1="1398.273" y2="1398.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="189" x="919.875" y="1420.5089">pure   :: a -&gt; f a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="357" x="919.875" y="1441.2493">(&lt;*&gt;)  :: f (a -&gt; b) -&gt; f a -&gt; f b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="462" x="919.875" y="1461.9896">liftA2 :: (a -&gt; b -&gt; c) -&gt; f a -&gt; f b -&gt; f c</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="919.875" y="1482.73">(*&gt;)   :: f a -&gt; f b -&gt; f b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="919.875" y="1503.4703">(&lt;*)   :: f a -&gt; f b -&gt; f a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="165" x="919.875" y="1547.9992">pure, ((&lt;*&gt;) | liftA2)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="912.375" x2="1108.875" y1="1524.3449" y2="1524.3449"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1108.875" y="1529.4606">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1192.875" x2="1389.375" y1="1524.3449" y2="1524.3449"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="285" x="919.875" y="1590.2329">Either e, [], Maybe, IO, (-&gt;) r, (,) a</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="912.375" x2="1103.625" y1="1568.0549" y2="1568.0549"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1103.625" y="1573.1706">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1198.125" x2="1389.375" y1="1568.0549" y2="1568.0549"/><!--MD5=[d1914d4086834916cfee264afeb7473b]
+class Comonad--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="235.7782" id="Comonad" style="stroke: #A80036; stroke-width: 2.25;" width="406.5" x="1269" y="984.75"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73.5" x="1299" y="1009.9621">Comonad</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="1383" y="1009.9621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1270.5" x2="1674" y1="1022.3762" y2="1022.3762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="336" x="1278" y="1049.0401">Functor w =&gt; Comonad w where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1270.5" x2="1674" y1="1060.773" y2="1060.773"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="1278" y="1083.0089">extract   :: w a -&gt; a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="1278" y="1103.7493">duplicate :: w a -&gt; w (w a)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="388.5" x="1278" y="1124.4896">extend    :: (w a -&gt; b) -&gt; w a -&gt; w b</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="375" x="1278" y="1169.0185">(+), (*), abs, signum, fromInteger, (negate | (-))</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1270.5" x2="1430.25" y1="1145.3643" y2="1145.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1430.25" y="1150.48">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1514.25" x2="1674" y1="1145.3643" y2="1145.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97.5" x="1278" y="1211.2522">(-&gt;) m, (,) e</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1270.5" x2="1425" y1="1189.0742" y2="1189.0742"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1425" y="1194.1899">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1519.5" x2="1674" y1="1189.0742" y2="1189.0742"/><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="215.0378" id="Category" style="stroke: #A80036; stroke-width: 2.25;" width="523.5" x="1413" y="62.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="84" x="1417.5" y="87.4621">Category</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="420" x="1512" y="87.4621">:: forall k. (k -&gt; k -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1414.5" x2="1935" y1="99.8762" y2="99.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="216" x="1422" y="126.5401">Category cat where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1414.5" x2="1935" y1="138.273" y2="138.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="147" x="1422" y="160.5089">id  :: cat a a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="378" x="1422" y="181.2493">(.) :: cat b c -&gt; cat a b -&gt; cat a c</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="52.5" x="1422" y="225.7782">id, (.)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1414.5" x2="1632.75" y1="202.1239" y2="202.1239"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1632.75" y="207.2396">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1716.75" x2="1935" y1="202.1239" y2="202.1239"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="112.5" x="1422" y="268.0119">-&gt;, Cokleisli w</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1414.5" x2="1627.5" y1="245.8339" y2="245.8339"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1627.5" y="250.9496">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1722" x2="1935" y1="245.8339" y2="245.8339"/><!--MD5=[b727a74f0a0526f8ad7898b6777dff1a]
+class Arrow--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="277.2589" id="Arrow" style="stroke: #A80036; stroke-width: 2.25;" width="511.5" x="1419" y="512.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="52.5" x="1485.75" y="537.4621">Arrow</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="315" x="1548.75" y="537.4621">:: (* -&gt; * -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1420.5" x2="1929" y1="549.8762" y2="549.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="324" x="1428" y="576.5401">Category a =&gt; Arrow a where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1420.5" x2="1929" y1="588.273" y2="588.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="1428" y="610.5089">arr    :: (b -&gt; c) -&gt; a b c</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="357" x="1428" y="631.2493">first  :: a b c -&gt; a (b, d) (c, d)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="357" x="1428" y="651.9896">second :: a b c -&gt; a (d, b) (d, c)</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="493.5" x="1428" y="672.73">(***)  :: a b c -&gt; a b' c' -&gt; a (b, b') (c, c')</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="420" x="1428" y="693.4703">(&amp;&amp;&amp;)  :: a b c -&gt; a b c' -&gt; a b (c, c')</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="150" x="1428" y="737.9992">arr, (first | (***))</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1420.5" x2="1632.75" y1="714.3449" y2="714.3449"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1632.75" y="719.4606">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1716.75" x2="1929" y1="714.3449" y2="714.3449"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="1428" y="780.2329">(-&gt;)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1420.5" x2="1627.5" y1="758.0549" y2="758.0549"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1627.5" y="763.1706">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1722" x2="1929" y1="758.0549" y2="758.0549"/><!--MD5=[6d65940f8ffb0d0b3d9f51f76c77918b]
+class Monad--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="235.7782" id="Monad" style="stroke: #A80036; stroke-width: 2.25;" width="378" x="606.375" y="1701.75"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="52.5" x="632.625" y="1726.9621">Monad</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="695.625" y="1726.9621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="607.875" x2="982.875" y1="1739.3762" y2="1739.3762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="360" x="615.375" y="1766.0401">Applicative m =&gt; Monad m where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="607.875" x2="982.875" y1="1777.773" y2="1777.773"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="357" x="615.375" y="1800.0089">(&gt;&gt;=)  :: m a -&gt; (a -&gt; m b) -&gt; m b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="283.5" x="615.375" y="1820.7493">(&gt;&gt;)   :: m a -&gt; m b -&gt; m b</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="189" x="615.375" y="1841.4896">return :: a -&gt; m a</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="37.5" x="615.375" y="1886.0185">(&gt;&gt;=)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="607.875" x2="753.375" y1="1862.3643" y2="1862.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="753.375" y="1867.48">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="837.375" x2="982.875" y1="1862.3643" y2="1862.3643"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="285" x="615.375" y="1928.2522">Either e, [], Maybe, IO, (-&gt;) r, (,) a</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="607.875" x2="748.125" y1="1906.0742" y2="1906.0742"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="748.125" y="1911.1899">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="842.625" x2="982.875" y1="1906.0742" y2="1906.0742"/><!--MD5=[7b6a9eceeebf042bca50458be56a9504]
+class Alternative--><rect fill="#FEFECE" filter="url(#fv26iv4zdjog8)" height="256.5185" id="Alternative" style="stroke: #A80036; stroke-width: 2.25;" width="450" x="1037.625" y="1691.25"/><text fill="#000000" font-family="Source Code Pro" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115.5" x="1068.375" y="1716.4621">Alternative</text><text fill="#000000" font-family="Source Code Pro" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="1194.375" y="1716.4621">:: (* -&gt; *) -&gt; Constraint</text><line style="stroke: #A80036; stroke-width: 2.25;" x1="1039.125" x2="1486.125" y1="1728.8762" y2="1728.8762"/><text fill="#000000" font-family="Source Code Pro" font-size="21" lengthAdjust="spacingAndGlyphs" textLength="432" x="1046.625" y="1755.5401">Applicative f =&gt; Alternative f where</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1039.125" x2="1486.125" y1="1767.273" y2="1767.273"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="126" x="1046.625" y="1789.5089">empty :: f a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="273" x="1046.625" y="1810.2493">(&lt;|&gt;) :: f a -&gt; f a -&gt; f a</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="1046.625" y="1830.9896">some  :: f a -&gt; f [a]</text><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="220.5" x="1046.625" y="1851.73">many  :: f a -&gt; f [a]</text><text fill="#000000" font-family="Source Code Pro" font-size="13.5" lengthAdjust="spacingAndGlyphs" textLength="90" x="1046.625" y="1896.2589">empty, (&lt;|&gt;)</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1039.125" x2="1220.625" y1="1872.6046" y2="1872.6046"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="84" x="1220.625" y="1877.7203">Required</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1304.625" x2="1486.125" y1="1872.6046" y2="1872.6046"/><text fill="#000000" font-family="Source Code Pro" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="97.5" x="1046.625" y="1938.4926">[], Maybe, IO</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1039.125" x2="1215.375" y1="1916.3146" y2="1916.3146"/><text fill="#000000" font-family="Source Code Pro" font-size="16.5" lengthAdjust="spacingAndGlyphs" textLength="94.5" x="1215.375" y="1921.4303">Instances</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1309.875" x2="1486.125" y1="1916.3146" y2="1916.3146"/><!--MD5=[de6292d23fd9b5ffe8d5eccaa8a621de]
+reverse link Eq to Ord--><path d="M846.897,169.5 C861.588,169.5 876.279,169.5 890.97,169.5 " fill="none" id="Eq&lt;-Ord" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="839.2155,169.5,852.7155,175.5,846.7155,169.5,852.7155,163.5,839.2155,169.5" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[cc45f1d1cd5580ff877b923dedcd910e]
+link Functor to Traversable--><path d="M1095.24,758.7885 C1040.376,821.3985 970.485,901.161 911.982,967.926 " fill="none" id="Functor-&gt;Traversable" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="906.717,973.935,920.1276,967.7378,911.6606,968.2949,911.1035,959.828,906.717,973.935" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[5e5de6f9995145d5ab454c7d3e054983]
+link Functor to Applicative--><path d="M1183.4535,758.4165 C1176.8415,900.693 1165.065,1154.118 1157.6295,1314.1515 " fill="none" id="Functor-&gt;Applicative" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="1157.2785,1321.701,1163.9007,1308.4951,1157.6278,1314.2091,1151.9138,1307.9362,1157.2785,1321.701" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[b0ef27e86e27cda164de07a6ab5457bd]
+link Functor to Comonad--><path d="M1255.56,758.7885 C1297.1205,824.535 1350.633,909.195 1394.0355,977.8575 " fill="none" id="Functor-&gt;Comonad" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="1398.204,984.4515,1396.0604,969.8346,1394.1957,978.1124,1385.9179,976.2478,1398.204,984.4515" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[15cbf2cf223ec691eee8a3dfdbc8dd53]
+link Semigroup to Monoid--><path d="M219.375,769.167 C219.375,832.8915 219.375,911.805 219.375,976.6875 " fill="none" id="Semigroup-&gt;Monoid" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="219.375,984.528,225.375,971.028,219.375,977.028,213.375,971.028,219.375,984.528" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[fbfdbfdb57efba90aba964b8b2be4050]
+link Applicative to Alternative--><path d="M1193.79,1599.945 C1202.322,1627.2705 1211.2725,1655.937 1219.7775,1683.174 " fill="none" id="Applicative-&gt;Alternative" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="1222.164,1690.815,1223.8684,1676.1404,1219.929,1683.6558,1212.4136,1679.7163,1222.164,1690.815" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[a5675553ec1fe50c053c36aeaa67a086]
+link Applicative to Monad--><path d="M1013.43,1599.945 C981.6615,1631.7135 948.0795,1665.2955 917.04,1696.335 " fill="none" id="Applicative-&gt;Monad" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="911.679,1701.696,925.4676,1696.3927,916.9823,1696.3927,916.9823,1687.9074,911.679,1701.696" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[fcd1915ec9be5adacbb566ffe159f0a1]
+link Category to Arrow--><path d="M1674.375,277.2 C1674.375,344.01 1674.375,431.115 1674.375,504.276 " fill="none" id="Category-&gt;Arrow" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="1674.375,512.2155,1680.375,498.7155,1674.375,504.7155,1668.375,498.7155,1674.375,512.2155" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[615c13addabf00c0a555ce1776f17e72]
+link Foldable to Traversable--><path d="M756.0615,883.3185 C761.1555,911.523 766.224,939.5895 770.9445,965.73 " fill="none" id="Foldable-&gt;Traversable" style="stroke: #A80036; stroke-width: 1.5;"/><polygon fill="#A80036" points="772.398,973.7775,775.9039,959.4262,771.0654,966.3968,764.0948,961.5584,772.398,973.7775" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[5ef3122adba65886e1656cd9ca3dedd4]
+link Foldable to Monoid--><path d="M479.922,864.9285 C436.5735,904.2045 392.691,943.965 353.6115,979.374 " fill="none" id="Foldable-&gt;Monoid" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="347.8815,984.5655,361.9147,979.9483,353.4398,979.5301,353.858,971.0551,347.8815,984.5655" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[d66444aa7b5f6b1ca90e17af8104f500]
+reverse link Eq to Foldable--><path d="M714.375,285.18 C714.375,325.59 714.375,372.615 714.375,419.19 " fill="none" id="Eq&lt;-Foldable" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="714.375,277.2,708.375,290.7,714.375,284.7,720.375,290.7,714.375,277.2" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[0b8008c6bafb28c41d87909f0369e838]
+reverse link Ord to Foldable--><path d="M918.543,325.47 C899.706,355.365 879.591,387.3 859.6035,419.01 " fill="none" id="Ord&lt;-Foldable" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="922.5435,319.125,910.2818,327.3651,918.5541,325.4759,920.4433,333.7482,922.5435,319.125" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[20be2c57be1d2606b8041c3b73519e28]
+reverse link Num to Foldable--><path d="M468.9795,335.115 C490.095,362.175 512.3235,390.645 534.4245,418.965 " fill="none" id="Num&lt;-Foldable" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="464.208,329.01,467.7734,343.3466,468.818,334.9259,477.2388,335.9705,464.208,329.01" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[c8fda1f7b02a9228bd987b193ce644ff]
+link Traversable to Applicative--><path d="M922.2135,1230.8385 C949.881,1258.506 979.344,1287.969 1007.601,1316.226 " fill="none" id="Traversable-&gt;Applicative" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1013.235,1321.86,1007.9317,1308.0714,1007.9317,1316.5567,999.4464,1316.5567,1013.235,1321.86" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[3ad86c4cb0aecf0deaf6e4c921192296]
+link Traversable to Monad--><path d="M795.375,1230.8265 C795.375,1361.4675 795.375,1563.798 795.375,1693.5585 " fill="none" id="Traversable-&gt;Monad" style="stroke: #A80036; stroke-width: 1.5; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="795.375,1701.225,801.375,1687.725,795.375,1693.725,789.375,1687.725,795.375,1701.225" style="stroke: #A80036; stroke-width: 1.5;"/><!--MD5=[86d6983a10866eec1587f0b349c999f6]
+@startuml
+hide circle
+hide method
+
+skinparam defaultFontColor black
+skinparam defaultFontName "Source Code Pro"
+
+scale 1.5
+
+class Eq as "**Eq** :: * -> Constraint"
+class Ord as "**Ord** :: * -> Constraint"
+class Num as "**Num** :: * -> Constraint"
+class Semigroup as "**Semigroup** :: * -> Constraint"
+class Monoid as "**Monoid** :: Semigroup a => Monoid a where"
+class Functor as "**Functor** :: (* -> *) -> Constraint"
+class Foldable as "**Foldable** :: (* -> *) -> Constraint"
+class Traversable as "**Traversable** :: (* -> *) -> Constraint"
+class Applicative as "**Applicative** :: (* -> *) -> Constraint"
+class Comonad as "**Comonad** :: (* -> *) -> Constraint"
+class Category as "**Category** :: forall k. (k -> k -> *) -> Constraint"
+class Arrow as "**Arrow** :: (* -> * -> *) -> Constraint"
+class Monad as "**Monad** :: (* -> *) -> Constraint"
+class Alternative as "**Alternative** :: (* -> *) -> Constraint"
+
+class Eq {
+        <size:14>Eq a where</size>
+        - - -
+        (==) :: a -> a -> Bool
+        (/=) :: a -> a -> Bool
+        - -Required- -
+        <size:9>(==) | (/=)</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+Ord - -left> Eq
+
+class Ord {
+        <size:14>Eq a => Ord a where</size>
+        - - -
+        (<)  :: a -> a -> Bool
+        (<=) :: a -> a -> Bool
+        (>)  :: a -> a -> Bool
+        (>=) :: a -> a -> Bool
+        max  :: a -> a -> a
+        min  :: a -> a -> a
+        - -Required- -
+        <size:9>compare | (<=)</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+class Num {
+        <size:14>Num a where</size>
+        - - -
+        (+)         :: a -> a -> a
+        (-)         :: a -> a -> a
+        (*)         :: a -> a -> a
+        negate      :: a -> a
+        abs         :: a -> a
+        signum      :: a -> a
+        fromInteger :: Integer -> a
+        - -Required- -
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+
+Functor - -> Traversable
+Functor - -> Applicative
+Functor - -> Comonad
+
+class Functor {
+        <size:14>Functor f where</size>
+        - - -
+        fmap :: (a -> b) -> f a -> f b
+        (<$) :: a -> f b -> f a
+        - -Required- -
+        <size:9>fmap</size>
+        - -Instances- -
+        <size:8>Either a, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+class Comonad {
+        <size:14>Functor w => Comonad w where</size>
+        - - -
+        extract   :: w a -> a
+        duplicate :: w a -> w (w a)
+        extend    :: (w a -> b) -> w a -> w b
+        - -Required- -
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
+        - -Instances- -
+        <size:8>(->) m, (,) e</size>
+}
+
+
+Semigroup - -> Monoid
+
+class Semigroup {
+        <size:14>Semigroup a where</size>
+        - - -
+        (<>)    :: a -> a -> a
+        sconcat :: NonEmpty a -> a
+        stimes  :: Integral b => b -> a -> a
+        - -Required- -
+        <size:9>(<>)</size>
+        - -Instances- -
+        <size:8>Either a b, [a], Maybe a, IO a, a -> b</size>
+}
+
+
+Applicative - -> Alternative
+Applicative - -> Monad
+
+class Applicative {
+        <size:14>Functor f => Applicative f where</size>
+        - - -
+        pure   :: a -> f a
+        (<*>)  :: f (a -> b) -> f a -> f b
+        liftA2 :: (a -> b -> c) -> f a -> f b -> f c
+        (*>)   :: f a -> f b -> f b
+        (<*)   :: f a -> f b -> f a
+        - -Required- -
+        <size:9>pure, ((<*>) | liftA2)</size>
+        - -Instances- -
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+
+class Monoid {
+        <size:14>Semigroup a => Monoid a where</size>
+        - - -
+        mempty  :: a
+        mappend :: a -> a -> a
+        mconcat :: [a] -> a
+        - -Required- -
+        <size:9>mempty</size>
+        - -Instances- -
+        <size:8>[a], Maybe a, IO a, a -> b, (a, b)</size>
+}
+
+
+Category - -> Arrow
+
+Foldable - -> Traversable
+Foldable ..> Monoid
+Foldable ..up> Eq
+Foldable ..up> Ord
+Foldable ..up> Num
+
+class Foldable {
+        <size:14>Foldable t where</size>
+        - - -
+        fold    :: Monoid m => t m -> m
+        foldMap :: Monoid m => (a -> m) -> t a -> m
+        foldr   :: (a -> b -> b) -> b -> t a -> b
+        foldl   :: (b -> a -> b) -> b -> t a -> b
+        foldr1  :: (a -> a -> a) -> t a -> a
+        foldl1  :: (a -> a -> a) -> t a -> a
+        toList  :: t a -> [a]
+        null    :: t a -> Bool
+        length  :: t a -> Int
+        elem    :: Eq a => a -> t a -> Bool
+        maximum :: Ord a => t a -> a
+        minimum :: Ord a => t a -> a
+        sum     :: Num a => t a -> a
+        product :: Num a => t a -> a
+        - -Required- -
+        <size:9>foldMap | foldr</size>
+        - -Instances- -
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+' Monad - -> MonadFix
+' Monad - -> MonadPlus
+' Monad -> ArrowApply
+
+class Monad {
+        <size:14>Applicative m => Monad m where</size>
+        - - -
+        (>>=)  :: m a -> (a -> m b) -> m b
+        (>>)   :: m a -> m b -> m b
+        return :: a -> m a
+        - -Required- -
+        <size:9>(>>=)</size>
+        - -Instances- -
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+Traversable ..> Applicative
+Traversable ..> Monad
+
+class Traversable {
+        (<size:14>Functor t, Foldable t) => Traversable t where</size>
+        - - -
+        traverse  :: Applicative f => (a -> f b) -> t a -> f (t b)
+        sequenceA :: Applicative f => t (f a) -> f (t a)
+        mapM      :: Monad m => (a -> m b) -> t a -> m (t b)
+        sequence  :: Monad m => t (m a) -> m (t a)
+        - -Required- -
+        <size:9>traverse | sequenceA</size>
+        - -Instances- -
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+class Alternative {
+        <size:14>Applicative f => Alternative f where</size>
+        - - -
+        empty :: f a
+        (<|>) :: f a -> f a -> f a
+        some  :: f a -> f [a]
+        many  :: f a -> f [a]
+        - -Required- -
+        <size:9>empty, (<|>)</size>
+        - -Instances- -
+        <size:8>[], Maybe, IO</size>
+}
+
+class Category {
+        <size:14>Category cat where</size>
+        - - -
+        id  :: cat a a
+        (.) :: cat b c -> cat a b -> cat a c
+        - -Required- -
+        <size:9>id, (.)</size>
+        - -Instances- -
+        <size:8>->, Cokleisli w</size>
+}
+
+/'
+ ' Arrow - -> ArrowApply
+ ' Arrow - -> ArrowChoice
+ ' Arrow - -> ArrowLoop
+ ' Arrow - -> ArrowZero
+ '/
+
+class Arrow {
+        <size:14>Category a => Arrow a where</size>
+        - - -
+        arr    :: (b -> c) -> a b c
+        first  :: a b c -> a (b, d) (c, d)
+        second :: a b c -> a (d, b) (d, c)
+        (***)  :: a b c -> a b' c' -> a (b, b') (c, c')
+        (&&&)  :: a b c -> a b c' -> a b (c, c')
+        - -Required- -
+        <size:9>arr, (first | (***))</size>
+        - -Instances- -
+        <size:8>(->)</size>
+}
+
+/'
+ ' ArrowZero -left-> ArrowPlus
+ '/
+@enduml
+
+@startuml
+hide circle
+hide method
+
+skinparam defaultFontColor black
+skinparam defaultFontName "Source Code Pro"
+
+scale 1.5
+
+class Eq as "**Eq** :: * -> Constraint"
+class Ord as "**Ord** :: * -> Constraint"
+class Num as "**Num** :: * -> Constraint"
+class Semigroup as "**Semigroup** :: * -> Constraint"
+class Monoid as "**Monoid** :: Semigroup a => Monoid a where"
+class Functor as "**Functor** :: (* -> *) -> Constraint"
+class Foldable as "**Foldable** :: (* -> *) -> Constraint"
+class Traversable as "**Traversable** :: (* -> *) -> Constraint"
+class Applicative as "**Applicative** :: (* -> *) -> Constraint"
+class Comonad as "**Comonad** :: (* -> *) -> Constraint"
+class Category as "**Category** :: forall k. (k -> k -> *) -> Constraint"
+class Arrow as "**Arrow** :: (* -> * -> *) -> Constraint"
+class Monad as "**Monad** :: (* -> *) -> Constraint"
+class Alternative as "**Alternative** :: (* -> *) -> Constraint"
+
+class Eq {
+        <size:14>Eq a where</size>
+        - - -
+        (==) :: a -> a -> Bool
+        (/=) :: a -> a -> Bool
+        - -Required- -
+        <size:9>(==) | (/=)</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+Ord - -left> Eq
+
+class Ord {
+        <size:14>Eq a => Ord a where</size>
+        - - -
+        (<)  :: a -> a -> Bool
+        (<=) :: a -> a -> Bool
+        (>)  :: a -> a -> Bool
+        (>=) :: a -> a -> Bool
+        max  :: a -> a -> a
+        min  :: a -> a -> a
+        - -Required- -
+        <size:9>compare | (<=)</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+class Num {
+        <size:14>Num a where</size>
+        - - -
+        (+)         :: a -> a -> a
+        (-)         :: a -> a -> a
+        (*)         :: a -> a -> a
+        negate      :: a -> a
+        abs         :: a -> a
+        signum      :: a -> a
+        fromInteger :: Integer -> a
+        - -Required- -
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
+        - -Instances- -
+        <size:8>Int, Float, Double, Char, Bool</size>
+}
+
+
+Functor - -> Traversable
+Functor - -> Applicative
+Functor - -> Comonad
+
+class Functor {
+        <size:14>Functor f where</size>
+        - - -
+        fmap :: (a -> b) -> f a -> f b
+        (<$) :: a -> f b -> f a
+        - -Required- -
+        <size:9>fmap</size>
+        - -Instances- -
+        <size:8>Either a, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+class Comonad {
+        <size:14>Functor w => Comonad w where</size>
+        - - -
+        extract   :: w a -> a
+        duplicate :: w a -> w (w a)
+        extend    :: (w a -> b) -> w a -> w b
+        - -Required- -
+        <size:9>(+), (*), abs, signum, fromInteger, (negate | (-))</size>
+        - -Instances- -
+        <size:8>(->) m, (,) e</size>
+}
+
+
+Semigroup - -> Monoid
+
+class Semigroup {
+        <size:14>Semigroup a where</size>
+        - - -
+        (<>)    :: a -> a -> a
+        sconcat :: NonEmpty a -> a
+        stimes  :: Integral b => b -> a -> a
+        - -Required- -
+        <size:9>(<>)</size>
+        - -Instances- -
+        <size:8>Either a b, [a], Maybe a, IO a, a -> b</size>
+}
+
+
+Applicative - -> Alternative
+Applicative - -> Monad
+
+class Applicative {
+        <size:14>Functor f => Applicative f where</size>
+        - - -
+        pure   :: a -> f a
+        (<*>)  :: f (a -> b) -> f a -> f b
+        liftA2 :: (a -> b -> c) -> f a -> f b -> f c
+        (*>)   :: f a -> f b -> f b
+        (<*)   :: f a -> f b -> f a
+        - -Required- -
+        <size:9>pure, ((<*>) | liftA2)</size>
+        - -Instances- -
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+
+class Monoid {
+        <size:14>Semigroup a => Monoid a where</size>
+        - - -
+        mempty  :: a
+        mappend :: a -> a -> a
+        mconcat :: [a] -> a
+        - -Required- -
+        <size:9>mempty</size>
+        - -Instances- -
+        <size:8>[a], Maybe a, IO a, a -> b, (a, b)</size>
+}
+
+
+Category - -> Arrow
+
+Foldable - -> Traversable
+Foldable ..> Monoid
+Foldable ..up> Eq
+Foldable ..up> Ord
+Foldable ..up> Num
+
+class Foldable {
+        <size:14>Foldable t where</size>
+        - - -
+        fold    :: Monoid m => t m -> m
+        foldMap :: Monoid m => (a -> m) -> t a -> m
+        foldr   :: (a -> b -> b) -> b -> t a -> b
+        foldl   :: (b -> a -> b) -> b -> t a -> b
+        foldr1  :: (a -> a -> a) -> t a -> a
+        foldl1  :: (a -> a -> a) -> t a -> a
+        toList  :: t a -> [a]
+        null    :: t a -> Bool
+        length  :: t a -> Int
+        elem    :: Eq a => a -> t a -> Bool
+        maximum :: Ord a => t a -> a
+        minimum :: Ord a => t a -> a
+        sum     :: Num a => t a -> a
+        product :: Num a => t a -> a
+        - -Required- -
+        <size:9>foldMap | foldr</size>
+        - -Instances- -
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+
+class Monad {
+        <size:14>Applicative m => Monad m where</size>
+        - - -
+        (>>=)  :: m a -> (a -> m b) -> m b
+        (>>)   :: m a -> m b -> m b
+        return :: a -> m a
+        - -Required- -
+        <size:9>(>>=)</size>
+        - -Instances- -
+        <size:8>Either e, [], Maybe, IO, (->) r, (,) a</size>
+}
+
+Traversable ..> Applicative
+Traversable ..> Monad
+
+class Traversable {
+        (<size:14>Functor t, Foldable t) => Traversable t where</size>
+        - - -
+        traverse  :: Applicative f => (a -> f b) -> t a -> f (t b)
+        sequenceA :: Applicative f => t (f a) -> f (t a)
+        mapM      :: Monad m => (a -> m b) -> t a -> m (t b)
+        sequence  :: Monad m => t (m a) -> m (t a)
+        - -Required- -
+        <size:9>traverse | sequenceA</size>
+        - -Instances- -
+        <size:8>[], Maybe, Either a, (,) a</size>
+}
+
+class Alternative {
+        <size:14>Applicative f => Alternative f where</size>
+        - - -
+        empty :: f a
+        (<|>) :: f a -> f a -> f a
+        some  :: f a -> f [a]
+        many  :: f a -> f [a]
+        - -Required- -
+        <size:9>empty, (<|>)</size>
+        - -Instances- -
+        <size:8>[], Maybe, IO</size>
+}
+
+class Category {
+        <size:14>Category cat where</size>
+        - - -
+        id  :: cat a a
+        (.) :: cat b c -> cat a b -> cat a c
+        - -Required- -
+        <size:9>id, (.)</size>
+        - -Instances- -
+        <size:8>->, Cokleisli w</size>
+}
+
+
+class Arrow {
+        <size:14>Category a => Arrow a where</size>
+        - - -
+        arr    :: (b -> c) -> a b c
+        first  :: a b c -> a (b, d) (c, d)
+        second :: a b c -> a (d, b) (d, c)
+        (***)  :: a b c -> a b' c' -> a (b, b') (c, c')
+        (&&&)  :: a b c -> a b c' -> a b (c, c')
+        - -Required- -
+        <size:9>arr, (first | (***))</size>
+        - -Instances- -
+        <size:8>(->)</size>
+}
+
+@enduml
+
+PlantUML version 1.2020.15(Sun Jun 28 06:39:45 CDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
